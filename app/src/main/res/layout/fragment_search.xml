@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context=".fragments.SearchFragment">
+
+        <LinearLayout
+            android:id="@+id/llBaseSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:includeFontPadding="false"
+                android:text="@string/search"
+
+                android:textColor="@color/view_white"
+                android:textSize="@dimen/_14ssp" />
+
+
+            <ImageView
+                android:id="@+id/imgSearchclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_search_edt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/trending_search"
+                    android:textColor="@color/view_grey2"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                    android:id="@+id/RvTrendingSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:animationDuration="@integer/Recycler_Animation_Duration"
+                    tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llinitSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#26767680">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:src="@drawable/ic_back" />
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/imgSearch"
+                    android:layout_toRightOf="@+id/imgBack"
+                    android:background="@null"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/search"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/view_white"
+                    android:textColorHint="@color/view_grey"
+                    android:textSize="@dimen/_12ssp" />
+
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_search" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llRecentSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/recent_search"
+                    android:textColor="@color/view_grey2"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                    android:id="@+id/RvRecentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:animationDuration="@integer/Recycler_Animation_Duration"
+                    tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTopResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/top_results"
+                    android:textColor="@color/view_grey2"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                    android:id="@+id/RvTopList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:animationDuration="@integer/Recycler_Animation_Duration"
+                    tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMoreResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/more_results"
+                    android:textColor="@color/view_grey2"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                    android:id="@+id/RvMoreResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:animationDuration="@integer/Recycler_Animation_Duration"
+                    tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

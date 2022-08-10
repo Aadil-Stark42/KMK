@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+            android:id="@+id/imgRecent"
+            android:layout_width="39dp"
+            android:layout_height="48dp"
+            android:src="@drawable/recent_1"
+            app:riv_corner_radius="@dimen/_4sdp" />
+
+
+        <TextView
+            android:id="@+id/txtRecent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/imgRecent"
+            android:fontFamily="@font/rubik_regular"
+            android:includeFontPadding="false"
+            android:text="Karan"
+            android:textColor="@color/view_white"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close"
+
+            app:tint="@color/view_grey2" />
+    </RelativeLayout>
+</layout>

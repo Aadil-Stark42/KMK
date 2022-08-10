@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+            android:id="@+id/imgSlider"
+            android:layout_width="228.79dp"
+            android:layout_height="300dp"
+            android:src="@drawable/slider_1"
+            app:riv_corner_radius="@dimen/_20sdp" />
+    </RelativeLayout>
+</layout>

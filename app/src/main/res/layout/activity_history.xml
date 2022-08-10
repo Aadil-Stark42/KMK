@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background"
+        android:orientation="vertical"
+        tools:context=".activitys.HistoryActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_included" />
+
+        <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+            android:id="@+id/RvHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            tools:animationDuration="@integer/Recycler_Animation_Duration"
+            tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+    </LinearLayout>
+
+</layout>

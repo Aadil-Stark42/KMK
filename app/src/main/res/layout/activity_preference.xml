@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background"
+        android:orientation="vertical"
+        tools:context=".activitys.preference.PreferenceActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_included" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/llVideoQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/video_quality"
+                    android:textColor="@color/view_white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/auto"
+                    android:textColor="@color/view_grey2"
+                    android:textSize="@dimen/_8ssp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/navigation_line" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:id="@+id/llNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/notification"
+                        android:textColor="@color/view_white"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/auto"
+                        android:textColor="@color/view_grey2"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                </LinearLayout>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+
+                    android:theme="@style/SwitchTheme" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@+id/llNotification"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/navigation_line" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:id="@+id/llNoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/notification"
+                        android:textColor="@color/view_white"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/on"
+                        android:textColor="@color/view_grey2"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                </LinearLayout>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:theme="@style/SwitchTheme" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@+id/llNoti"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/navigation_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:id="@+id/llAutoPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/auto_play"
+                        android:textColor="@color/view_white"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/on"
+                        android:textColor="@color/view_grey2"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                </LinearLayout>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:theme="@style/SwitchTheme" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@+id/llAutoPlay"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/navigation_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:id="@+id/llDownloadOver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/download_over_wifi"
+                        android:textColor="@color/view_white"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/on"
+                        android:textColor="@color/view_grey2"
+                        android:textSize="@dimen/_8ssp" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:theme="@style/SwitchTheme" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

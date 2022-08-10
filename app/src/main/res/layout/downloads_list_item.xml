@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rltview"
+            android:layout_width="105dp"
+            android:layout_height="70dp">
+
+            <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+                android:id="@+id/imgDOwnloadThub"
+                android:layout_width="105dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squad_game"
+                app:riv_corner_radius="@dimen/_5sdp" />
+
+            <RelativeLayout
+                android:id="@+id/rltvtrans"
+                android:layout_width="105dp"
+                android:layout_height="70dp"
+                android:visibility="gone">
+
+                <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+                    android:layout_width="105dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/view_black_trans"
+                    app:riv_corner_radius="@dimen/_5sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rltvdownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true">
+
+                    <ProgressBar
+                        android:id="@+id/downloadProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="65"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imgDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_download_2" />
+
+                    <ImageView
+                        android:id="@+id/imgCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_check"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_toLeftOf="@+id/rltvAction"
+            android:layout_toRightOf="@+id/rltview"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:includeFontPadding="false"
+                android:text="Squid Game"
+                android:textColor="@color/view_white"
+                android:textSize="@dimen/_11ssp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtEpisodeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="1 Epsiode"
+                    android:textColor="@color/view_grey2"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ImageView
+                    android:id="@+id/imgDot"
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:src="@drawable/ic_dot_small" />
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:includeFontPadding="false"
+                    android:text="30 mb"
+                    android:textColor="@color/view_grey2"
+                    android:textSize="@dimen/_10ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltvAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_expand_right" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

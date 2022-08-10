@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        android:orientation="vertical">
+
+        <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+            android:id="@+id/imgDownloadEpisode"
+            android:layout_width="105dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/slider_2"
+            app:riv_corner_radius="@dimen/_5sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/rltvdownload"
+            android:layout_toRightOf="@+id/imgDownloadEpisode"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:includeFontPadding="false"
+                android:text="S01 E01"
+                android:textColor="@color/view_white"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/rubik_regular"
+                android:includeFontPadding="false"
+                android:text="Red Light, Green Light"
+                android:textColor="@color/view_grey2"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/rubik_regular"
+                android:includeFontPadding="false"
+                android:text="60 minute"
+                android:textColor="@color/view_grey2"
+                android:textSize="@dimen/_10ssp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltvdownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_menu_dot" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

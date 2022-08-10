@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <attr name="gt_color_list" format="reference" />
+        <attr name="gt_gradient_direction" format="enum">
+            <enum name="left" value="0" />
+            <enum name="up" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="gt_gradient_angle" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="BlurImageView">
+        <attr name="radius" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+
+        <attr name="riv_corner_radius" format="dimension" />
+
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+
+        <attr name="riv_border_width" format="dimension" />
+
+        <attr name="riv_border_color" format="color" />
+
+        <attr name="riv_mutate_background" format="boolean" />
+
+        <attr name="riv_oval" format="boolean" />
+
+        <attr name="android:scaleType" />
+
+        <attr name="riv_tile_mode">
+
+            <enum name="clamp" value="0" />
+
+            <enum name="repeat" value="1" />
+
+            <enum name="mirror" value="2" />
+
+        </attr>
+        <attr name="riv_tile_mode_x">
+
+            <enum name="clamp" value="0" />
+
+            <enum name="repeat" value="1" />
+
+            <enum name="mirror" value="2" />
+
+        </attr>
+
+        <attr name="riv_tile_mode_y">
+
+            <enum name="clamp" value="0" />
+
+            <enum name="repeat" value="1" />
+
+            <enum name="mirror" value="2" />
+
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="OtpViewTheme">
+        <attr name="otpViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="OtpView">
+        <attr name="OtpItemCount" format="integer" />
+        <attr name="OtpItemWidth" format="dimension" />
+        <attr name="OtpItemHeight" format="dimension" />
+        <attr name="OtpItemRadius" format="dimension" />
+        <attr name="OtpItemSpacing" format="dimension" />
+        <attr name="OtpLineWidth" format="dimension" />
+        <attr name="OtpLineColor" format="reference|color" />
+        <attr name="OtpViewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="android:textAllCaps" />
+        <attr name="OtpCursorWidth" format="dimension" />
+        <attr name="OtpCursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="OtpHideLineWhenFilled" format="boolean" />
+        <attr name="OtpState_filled" format="boolean" />
+        <attr name="OtpRtlTextDirection" format="boolean" />
+        <attr name="OtpMaskingChar" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+
+        <attr name="civ_border_width" format="dimension" />
+
+        <attr name="civ_border_color" format="color" />
+
+        <attr name="civ_border_overlay" format="boolean" />
+
+        <attr name="civ_circle_background_color" format="color" />
+
+    </declare-styleable>
+    <declare-styleable name="AnimatedRecyclerView">
+        <attr name="layoutAnimation" format="reference" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="layoutManagerOrientation" format="integer">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="layoutManagerReverse" format="boolean" />
+        <attr name="layoutManagerType" format="integer">
+            <enum name="linear" value="0" />
+            <enum name="grid" value="1" />
+        </attr>
+        <attr name="gridLayoutManagerColumns" format="integer" />
+    </declare-styleable>
+    <attr format="color" name="dotsColor"/>
+    <attr format="color" name="selectedDotColor"/>
+    <attr format="color" name="dotsStrokeColor"/>
+    <attr format="dimension" name="dotsSize"/>
+    <attr format="float" name="dotsWidthFactor"/>
+    <attr format="dimension" name="dotsSpacing"/>
+    <attr format="dimension" name="dotsCornerRadius"/>
+    <attr format="dimension" name="dotsStrokeWidth"/>
+    <attr format="float" name="stiffness"/>
+    <attr format="float" name="dampingRatio"/>
+    <attr format="boolean" name="progressMode"/>
+    <attr format="boolean" name="dotsClickable"/>
+
+    <declare-styleable name="DotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="selectedDotColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsWidthFactor"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="progressMode"/>
+        <attr name="dotsClickable"/>
+        <attr name="dotsElevation" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SpringDotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="dotsStrokeWidth"/>
+        <attr name="dotsStrokeColor"/>
+        <attr name="stiffness"/>
+        <attr name="dampingRatio"/>
+        <attr name="dotsClickable"/>
+    </declare-styleable>
+
+    <declare-styleable name="WormDotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="dotsStrokeWidth"/>
+        <attr name="dotsStrokeColor"/>
+        <attr name="dotsClickable"/>
+    </declare-styleable>
+
+    <declare-styleable name="QuiltView">
+        <attr name="scrollOrientation" format="string"/>
+        <attr name="childPadding" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ZoomageView">
+        <attr name="zoomage_zoomable" format="boolean" />
+        <attr name="zoomage_translatable" format="boolean" />
+        <attr name="zoomage_restrictBounds" format="boolean" />
+        <attr name="zoomage_animateOnReset" format="boolean" />
+        <attr name="zoomage_doubleTapToZoom" format="boolean" />
+        <attr name="zoomage_doubleTapToZoomScaleFactor" format="float" />
+        <attr name="zoomage_autoCenter" format="boolean" />
+        <attr name="zoomage_minScale" format="float" />
+        <attr name="zoomage_maxScale" format="float" />
+        <attr name="zoomage_autoResetMode" format="enum">
+            <enum name="UNDER" value="0" />
+            <enum name="OVER" value="1" />
+            <enum name="ALWAYS" value="2" />
+            <enum name="NEVER" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

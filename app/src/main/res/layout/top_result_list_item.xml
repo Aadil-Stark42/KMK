@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+            android:id="@+id/imgTopResult"
+            android:layout_width="99dp"
+            android:layout_height="142dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/top_result_1"
+            app:riv_corner_radius="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_toRightOf="@+id/imgTopResult"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:includeFontPadding="false"
+                android:text="Mandela"
+                android:textColor="@color/view_white"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:includeFontPadding="false"
+                android:text="Comedy"
+                android:textColor="@color/view_grey2"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:includeFontPadding="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="An underprivileged hairdresser becomes the gamechanger in a local body election in a village where caste politics rules the roost. Will he be able to bring some changes to people's lives?"
+                android:textColor="@color/view_grey2"
+                android:textSize="@dimen/_8ssp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

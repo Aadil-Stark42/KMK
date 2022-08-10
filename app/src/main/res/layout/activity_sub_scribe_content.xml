@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#09090F"
+        tools:context=".activitys.subscribe.SubScribeContentActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rltvheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgBlurview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/squad_game" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_alignParentBottom="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bottom_shad" />
+
+
+                    <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+                        android:id="@+id/imgBlur2"
+                        android:layout_width="106dp"
+                        android:layout_height="135dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/squad_game"
+                        app:riv_corner_radius="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgBlur2"
+                        android:layout_marginTop="@dimen/_80sdp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rubik_medium"
+                                android:includeFontPadding="false"
+                                android:text="Subscribe to watch"
+                                android:textColor="@color/view_white"
+                                android:textSize="@dimen/_12ssp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rltvheader"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_40sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="@string/all_content"
+                                android:textColor="@color/view_white"
+                                android:textSize="@dimen/_11ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="@string/download"
+                                android:textColor="@color/view_white"
+                                android:textSize="@dimen/_11ssp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="@string/max_video_quality"
+                                android:textColor="@color/view_white"
+                                android:textSize="@dimen/_11ssp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="@string/max_audio_quality"
+                                android:textColor="@color/view_white"
+                                android:textSize="@dimen/_11ssp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llBasic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/season_tab"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_20sdp">
+
+
+                                <com.mindnotix.kmk.view.GradientTextView
+                                    android:id="@+id/txtBasicClick"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/basic"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold"
+                                    app:gt_color_list="@array/titlegrediant"
+                                    app:gt_gradient_direction="right" />
+
+                                <com.mindnotix.kmk.view.GradientTextView
+                                    android:id="@+id/txtBasic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/basic"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+
+                                <ImageView
+                                    android:id="@+id/imgNoBasiAllContent"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:src="@drawable/ic_close_3" />
+
+                                <ImageView
+                                    android:id="@+id/imgNoBasiDownload"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="@dimen/_36sdp"
+                                    android:src="@drawable/ic_close_3" />
+
+                                <TextView
+                                    android:id="@+id/txtBasicMaxVideo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_33sdp"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:gravity="center_horizontal"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="480p"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:id="@+id/txtBasicMaxAudio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_33sdp"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:gravity="center_horizontal"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="Stereo"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llStanderd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_20sdp">
+
+                                <com.mindnotix.kmk.view.GradientTextView
+                                    android:id="@+id/txtStandrdClick"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/standard"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    app:gt_color_list="@array/titlegrediant"
+                                    app:gt_gradient_direction="right" />
+
+                                <com.mindnotix.kmk.view.GradientTextView
+                                    android:id="@+id/txtStandrd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+
+                                    android:maxLines="1"
+                                    android:text="@string/standard"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold"
+
+                                    app:gt_gradient_direction="right" />
+
+
+                                <ImageView
+                                    android:id="@+id/imgNoStanderdAllContent"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:src="@drawable/ic_check_2"
+                                    app:tint="@color/view_grey2" />
+
+                                <ImageView
+                                    android:id="@+id/imgNoStanderdDownload"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="@dimen/_36sdp"
+                                    android:src="@drawable/ic_close_3"
+                                    app:tint="@color/view_grey2" />
+
+                                <TextView
+                                    android:id="@+id/txtStanderdMaxVideo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_33sdp"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:gravity="center_horizontal"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="720p(HD)"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:id="@+id/txtStanderdMaxAudio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_33sdp"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:gravity="center_horizontal"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="Dolby 5.1"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llPremuim"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_20sdp">
+
+                                <com.mindnotix.kmk.view.GradientTextView
+                                    android:id="@+id/txtPremuimClick"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/premium"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    app:gt_color_list="@array/titlegrediant"
+                                    app:gt_gradient_direction="right" />
+
+
+                                <com.mindnotix.kmk.view.GradientTextView
+                                    android:id="@+id/txtPremuim"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/premium"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_11ssp"
+
+                                    android:textStyle="bold" />
+
+
+                                <ImageView
+                                    android:id="@+id/imgNoPremuimAllContent"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:src="@drawable/ic_close_3"
+                                    app:tint="@color/view_grey2" />
+
+                                <ImageView
+                                    android:id="@+id/imgNoPremuimDownload"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="@dimen/_36sdp"
+                                    android:src="@drawable/ic_close_3"
+                                    app:tint="@color/view_grey2" />
+
+                                <TextView
+                                    android:id="@+id/txtPremuimMaxVideo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_33sdp"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:gravity="center_horizontal"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="1080p(Full HD)"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:id="@+id/txtPremuimMaxAudio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_33sdp"
+                                    android:autoSizeTextType="uniform"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:gravity="center_horizontal"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="Dolby 5.1"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llBasicPlan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_plan_selected"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_10sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/basic"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_11ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="₹100"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_13ssp" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/imgBasicPlanCheck"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_minus5sdp"
+                                android:src="@drawable/ic_check_plan" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llStandrdPlan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_un_selected_plan"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_10sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/standard"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_11ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="₹400"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_13ssp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/imgStandrdPlanCheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_minus5sdp"
+                                android:src="@drawable/ic_check_plan"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llPremuimPlan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_un_selected_plan"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_10sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/premium"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_11ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_3sdp"
+                                    android:fontFamily="@font/rubik_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="₹999"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_13ssp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/imgPremuimPlanCheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_minus5sdp"
+                                android:src="@drawable/ic_check_plan"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_continue" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blur_back"/>
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_back_arrow"/>
+    </RelativeLayout>
+
+</layout>

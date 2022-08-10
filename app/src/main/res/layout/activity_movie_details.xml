@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background"
+        tools:context=".activitys.moviedetails.MovieDetailsActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="430dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/moview_detail_1" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="247dp"
+                        android:layout_alignParentBottom="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bottom_shad" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_40sdp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:fontFamily="@font/rubik_bold"
+                            android:includeFontPadding="false"
+                            android:text="Jagame Thandhiram"
+
+                            android:textColor="@color/view_white"
+                            android:textSize="@dimen/_18ssp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="2021"
+                                android:textColor="@color/view_grey2"
+                                android:textSize="@dimen/_9ssp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@color/view_grey2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="Action, Crime, Drama"
+                                android:textColor="@color/view_grey2"
+                                android:textSize="@dimen/_9ssp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@color/view_grey2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="18+"
+                                android:textColor="@color/view_grey2"
+                                android:textSize="@dimen/_9ssp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgWatchNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_312sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_watch_now" />
+
+
+                <LinearLayout
+                    android:id="@+id/llAction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgWatchNow"
+                    android:layout_marginTop="@dimen/_30ssp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgWatchlist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_watch_list" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/rubik_regular"
+                            android:includeFontPadding="false"
+                            android:text="@string/watch_list"
+                            android:textColor="@color/view_grey2"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_download" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/rubik_regular"
+                            android:includeFontPadding="false"
+                            android:text="@string/download"
+                            android:textColor="@color/view_grey2"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_share" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/rubik_regular"
+                            android:includeFontPadding="false"
+                            android:text="@string/share"
+                            android:textColor="@color/view_grey2"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llAction"
+                    android:layout_marginTop="@dimen/_30sdp"
+
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llEpisodeClick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtEpisode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/episode"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+
+
+                                <View
+                                    android:id="@+id/Episode_line"
+                                    android:layout_width="@dimen/_48sdp"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@color/view_white" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/llInfoClick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_25sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtInfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/info"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+
+
+                                <View
+                                    android:id="@+id/info_line"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@color/view_white"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/llTrailerClick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_25sdp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtTrailer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/trailers"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:textStyle="bold" />
+
+
+                                <View
+                                    android:id="@+id/trailer_line"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@color/view_white"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@color/view_grey2" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:lineSpacingExtra="@dimen/_3sdp"
+                                android:text="A nomadic gangster finds himself caught between good and evil in a fight for a place to call home. Starring Dhanush, Aishwarya Lekshmi and James Cosmo."
+                                android:textColor="@color/view_grey2"
+                                android:textSize="@dimen/_9ssp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:lineSpacingExtra="@dimen/_3sdp"
+                                    android:text="Director:"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:id="@+id/txtDirectorName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:lineSpacingExtra="@dimen/_3sdp"
+                                    android:text="Karthik Subbaraj"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_10ssp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:lineSpacingExtra="@dimen/_3sdp"
+                                    android:text="Writers:"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:lineSpacingExtra="@dimen/_3sdp"
+                                    android:text="Nick Bain (additional dialogue)"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_10ssp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:lineSpacingExtra="@dimen/_3sdp"
+                                    android:text="@string/stars"
+                                    android:textColor="@color/view_white"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:fontFamily="@font/rubik_regular"
+                                    android:includeFontPadding="false"
+                                    android:lineSpacingExtra="@dimen/_3sdp"
+                                    android:text="Dhanush, James Cosmo, Aishwarya Lekshm"
+                                    android:textColor="@color/view_grey2"
+                                    android:textSize="@dimen/_10ssp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@color/view_grey2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:includeFontPadding="false"
+                                android:text="@string/more_like_this"
+                                android:textColor="@color/view_white"
+                                android:textSize="@dimen/_12ssp" />
+
+
+                            <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                                android:id="@+id/RvMoreLikeThis"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_10sdp"
+
+                                tools:animationDuration="@integer/Recycler_Animation_Duration"
+                                tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llTrailer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:orientation="vertical">
+
+
+                            <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                                android:id="@+id/RvTrailers"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                tools:animationDuration="@integer/Recycler_Animation_Duration"
+                                tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llEpisode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:orientation="vertical">
+
+
+                            <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                                android:id="@+id/RvSeasonList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                tools:animationDuration="@integer/Recycler_Animation_Duration"
+                                tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+                            <com.mindnotix.kmk.view.animatoerrecyclerview.AnimatedRecyclerView
+                                android:id="@+id/RvEpisodeList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                tools:animationDuration="@integer/Recycler_Animation_Duration"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                tools:layoutAnimation="@anim/layout_animation_from_bottom" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_back_arrow"/>
+    </RelativeLayout>
+</layout>

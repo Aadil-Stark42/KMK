@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+                android:id="@+id/imgTrending"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/more_result_1"
+                app:riv_corner_radius="@dimen/_10sdp" />
+
+
+            <com.mindnotix.kmk.view.roundedimage.RoundedImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/view_black_trans_2"
+                app:riv_corner_radius="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/txtGenresTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:includeFontPadding="false"
+                android:text="Action"
+                android:textColor="@color/view_white"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

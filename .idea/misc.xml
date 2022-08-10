@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable-v24/rounded_dialog.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/circle_shape.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/circular_progress_bar.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/dot_background.xml" value="0.1125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_background.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_check_2.xml" value="0.2046875" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_close.xml" value="0.1125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_close_2.xml" value="0.2046875" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_delete.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_download.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_download_2.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_downloaded.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_list.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_plan_selected.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_search.xml" value="0.2046875" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_search_edt.xml" value="0.2046875" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_un_selected_plan.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_watch_list_2.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/ic_watch_now.xml" value="0.2046875" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/season_tab.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/spring_dot_background.xml" value="0.1125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/worm_dot_background.xml" value="0.1125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/drawable/worm_dot_stroke_background.xml" value="0.1125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_download.xml" value="0.18" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_genres.xml" value="0.13360507246376813" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_genres_list.xml" value="0.13360507246376813" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_history.xml" value="0.16" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_movie_details.xml" value="0.2" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_movie_play.xml" value="0.1" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_preference.xml" value="0.2" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_sub_scribe_content.xml" value="0.19791666666666666" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/activity_watch_list.xml" value="0.2" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/dot_layout.xml" value="0.1" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/downloads_list_item.xml" value="0.25" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/episode_download_list_item.xml" value="0.25" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/episode_list_item.xml" value="0.25" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/fragment_download_action_bottom.xml" value="0.12" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/fragment_home.xml" value="0.14" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/fragment_search.xml" value="0.15" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/fragment_video_quality.xml" value="0.22" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/genres_detail_list_item.xml" value="0.13360507246376813" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/genres_list_item.xml" value="0.33" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/history_list_item.xml" value="0.33" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/home_slider_item.xml" value="0.16" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/most_like_item_list.xml" value="0.1" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/most_like_list_item.xml" value="0.22" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/popular_list_item.xml" value="0.5" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/recent_search_list.xml" value="0.14" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/season_list_item.xml" value="1.1" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/spring_dot_layout.xml" value="0.1" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/toolbar_included.xml" value="0.22" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/top_result_list_item.xml" value="0.22" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/trailer_list_item.xml" value="0.5051334702258727" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/trending_list_item.xml" value="0.22" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/watch_list_item.xml" value="0.18" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/app/src/main/res/layout/worm_dot_layout.xml" value="0.1" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/bvpkotlin/src/main/res/drawable-mdpi/background_fill.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/bvpkotlin/src/main/res/drawable/progress.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/bvpkotlin/src/main/res/drawable/progress_fill.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/bvpkotlin/src/main/res/drawable/thumb_fill.xml" value="0.2203125" />
+        <entry key="..\:/MindNotix/MindNotixProject/KMK/bvpkotlin/src/main/res/layout/bvp_include_controls.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
